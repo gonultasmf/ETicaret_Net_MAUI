@@ -100,20 +100,20 @@ namespace ETicaret.ViewModel
 
         private async void SelectBrand(ProductListModel obj)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new BrandDetailView());
+            // await Application.Current.MainPage.Navigation.PushAsync(new BrandDetailView());
         }
         private async void SelectProduct(ProductListModel obj)
         {
-            await Application.Current.MainPage.Navigation.PushModalAsync(new ProductDetailsView());
+            // await Application.Current.MainPage.Navigation.PushModalAsync(new ProductDetailsView());
         }
 
         private async void SelectCategory(CategoriesModel obj)
         {
-            await Application.Current.MainPage.Navigation.PushModalAsync(new CategoryDetailView(obj));
+            // await Application.Current.MainPage.Navigation.PushModalAsync(new CategoryDetailView(obj));
         }
         private async void SelectRecommend(object obj)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new AllProductView());
+            // await Application.Current.MainPage.Navigation.PushAsync(new AllProductView());
         }
     }
 }

@@ -61,7 +61,7 @@ namespace ETicaret.ViewModel
         }
         private async void SelectProduct(ProductListModel obj)
         {
-            await Application.Current.MainPage.Navigation.PushModalAsync(new ProductDetailsView());
+            // await Application.Current.MainPage.Navigation.PushModalAsync(new ProductDetailsView());
         }
 
         private void SelectMenu(TabPageModel obj)
