@@ -37,7 +37,7 @@ public partial class OrderDetailsView(OrderDetailsViewModel viewModel) : FmgLibC
                             .FontFamily("icon")
                             .FontSize(26)
                             .Center()
-                            .Text("&#xf141;")
+                            .Text("\uf141")
                             .TextColor(Black)
                         ),
 

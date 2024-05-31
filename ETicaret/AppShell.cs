@@ -16,15 +16,15 @@ public partial class AppShell : Shell
             .Items(
                 new Tab()
                 .Title("Explore")
-                .Icon(new FontImageSource().FontFamily("icon").Glyph("&#xf56e;"))
+                .Icon(new FontImageSource().FontFamily("icon").Glyph("\uf56e"))
                 .Items(new ShellContent().ContentTemplate(new DataTemplate(() => service.GetService<HomePageView>()))),
                 new Tab()
                 .Title("Cart")
-                .Icon(new FontImageSource().FontFamily("icon").Glyph("&#xf110;"))
+                .Icon(new FontImageSource().FontFamily("icon").Glyph("\uf110"))
                 .Items(new ShellContent().ContentTemplate(new DataTemplate(() => service.GetService<CartView>()))),
                 new Tab()
                 .Title("Account")
-                .Icon(new FontImageSource().FontFamily("icon").Glyph("&#xf56e;"))
+                .Icon(new FontImageSource().FontFamily("icon").Glyph("\uf004"))
                 .Items(new ShellContent().ContentTemplate(new DataTemplate(() => service.GetService<ProfileView>())))
             )
         );

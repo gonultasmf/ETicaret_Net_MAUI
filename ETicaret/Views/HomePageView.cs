@@ -46,7 +46,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                         .Center()
                                         .TextCenterHorizontal()
                                         .TextColor(Black)
-                                        .Text("&#xf349;"),
+                                        .Text("\uf349"),
 
                                         new Entry()
                                         .Margin(8,0)
@@ -71,7 +71,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                 .Center()
                                 .TextCenterHorizontal()
                                 .TextColor(White)
-                                .Text("&#xf100;");
+                                .Text("\uf100");
                             })
                         ];
                     }),

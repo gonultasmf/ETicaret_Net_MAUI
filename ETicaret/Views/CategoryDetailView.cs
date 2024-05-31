@@ -41,7 +41,7 @@ public partial class CategoryDetailView(CategoryDetailViewModel viewModel) : Fmg
                                         .FontFamily("icon")
                                         .FontSize(26)
                                         .TextColor(Black)
-                                        .Text("&#xf141;")
+                                        .Text("\uf141")
                                         .Center()
                                     ),
                                     new Label()
@@ -65,7 +65,7 @@ public partial class CategoryDetailView(CategoryDetailViewModel viewModel) : Fmg
                                         .FontFamily("icon")
                                         .FontSize(22)
                                         .TextColor(White)
-                                        .Text("&#xf100;")
+                                        .Text("\uf100")
                                         .TextCenterHorizontal()
                                         .Center()
                                     )

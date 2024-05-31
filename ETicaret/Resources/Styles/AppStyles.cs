@@ -7,16 +7,16 @@ public class AppStyles
     public static ResourceDictionary Default => new ResourceDictionary {
 
         // "ActivityIndicator"
-        
+    
         new Style<ActivityIndicator>(e => e
             .Color(e => e.OnLight(AppColors.Primary).OnDark(Colors.White))),
-        
+    
         // "IndicatorView"
 
         new Style<IndicatorView>(e => e
             .IndicatorColor(e => e.OnLight(AppColors.Gray200).OnDark(AppColors.Gray500))
             .SelectedIndicatorColor(e => e.OnLight(AppColors.Gray950).OnDark(AppColors.Gray100))),
-        
+    
         // "Border"
 
         new Style<Border>(e => e
@@ -28,7 +28,7 @@ public class AppStyles
 
         new Style<BoxView>(e => e
             .Color(e => e.OnLight(AppColors.Gray950).OnDark(AppColors.Gray200))),
-        
+    
 
         // "Button"
 
@@ -77,7 +77,7 @@ public class AppStyles
             new VisualState<DatePicker>(VisualStates.VisualElement.Disabled, e => e
                 .TextColor(e => e.OnLight(AppColors.Gray200).OnDark(AppColors.Gray500)))
         },
-        
+    
         // "Editor"
 
         new Style<Editor>(e => e
@@ -93,7 +93,7 @@ public class AppStyles
             new VisualState<Editor>(VisualStates.VisualElement.Disabled, e => e
                 .TextColor(e => e.OnLight(AppColors.Gray300).OnDark(AppColors.Gray600)))
         },  
-        
+    
 
         // "Entry"
 
@@ -117,7 +117,7 @@ public class AppStyles
             .HasShadow(false)
             .BorderColor(e => e.OnLight(AppColors.Gray200).OnDark(AppColors.Gray950))
             .CornerRadius(8)),
-        
+    
         // "ImageButton"
 
         new Style<ImageButton>(e => e
@@ -132,7 +132,7 @@ public class AppStyles
             new VisualState<ImageButton>(VisualStates.VisualElement.Disabled, e => e
                 .Opacity(0.5))
         },         
-        
+    
 
         // "Label"
 
@@ -169,7 +169,7 @@ public class AppStyles
                 .TextColor(e => e.OnLight(AppColors.Gray300).OnDark(AppColors.Gray600))
                 .TitleColor(e => e.OnLight(AppColors.Gray300).OnDark(AppColors.Gray600)))
         },  
-        
+    
 
         // "ProgressBar"
 
@@ -180,7 +180,7 @@ public class AppStyles
             new VisualState<ProgressBar>(VisualStates.VisualElement.Disabled, e => e
                 .ProgressColor(e => e.OnLight(AppColors.Gray300).OnDark(AppColors.Gray600)))
         },
-        
+    
         // "RadioButton"
 
         new Style<RadioButton>(e => e
@@ -200,7 +200,7 @@ public class AppStyles
 
         new Style<RefreshView>(e => e
             .RefreshColor(e => e.OnLight(AppColors.Gray900).OnDark(AppColors.Gray200))),
-        
+    
         // "SearchBar"
 
         new Style<SearchBar>(e => e
@@ -239,7 +239,7 @@ public class AppStyles
             .Opacity(0.5f)
             .Brush(e => e.OnLight(Colors.White).OnDark(Colors.White))
             .Offset(new Point(10, 10))),
-        
+    
         // "Slider"
 
         new Style<Slider>(e => e
@@ -300,7 +300,7 @@ public class AppStyles
         new Style<Page>(applyToDerivedTypes: true, e => e
             .Padding(0)
             .BackgroundColor(e => e.OnLight(Colors.White).OnDark(Colors.Black))),
-        
+    
         // "Shell"
 
         new Style<Shell>(applyToDerivedTypes: true, e => e
@@ -320,7 +320,7 @@ public class AppStyles
         new Style<NavigationPage>(e => e
             .BarBackgroundColor(e => e.OnLight(AppColors.Primary).OnDark(AppColors.Gray950))
             .BarTextColor(e => e.OnLight(AppColors.Gray200).OnDark(Colors.White))),
-        
+    
         // "TabbedPage"
 
         new Style<TabbedPage>(e => e

@@ -25,7 +25,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.eticaret</ApplicationId>
-		<ApplicationIdGuid>76af24e5-9d45-4181-bf1f-411ae05442e8</ApplicationIdGuid>
+		<ApplicationIdGuid>a7e7ee9c-69d2-426e-8517-ca767b9e08d1</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -58,13 +58,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\icon.ttf" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="FmgLib.MauiMarkup" Version="8.4.0-pre1.0.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.40" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.40" />
+		<PackageReference Include="FmgLib.MauiMarkup" Version="8.*" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.21" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.21" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
 </Project>

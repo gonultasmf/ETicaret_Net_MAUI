@@ -1,4 +1,7 @@
-﻿namespace ETicaret;
+﻿using ETicaret.ViewModel;
+using ETicaret.Views;
+
+namespace ETicaret;
 
 public static class MauiProgram
 {
@@ -11,12 +14,31 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                fonts.AddFont("icon.ttf", "icon");
             });
 
 
         builder.Services
             .AddSingleton<App>()
-            .AddSingleton<AppShell>();
+            .AddSingleton<AppShell>()
+            .AddScoped<AllProductView>()
+            .AddScoped<BrandDetailView>()
+            .AddScoped<CartView>()
+            .AddScoped<CategoryDetailView>()
+            .AddScoped<HomePageView>()
+            .AddScoped<OrderDetailsView>()
+            .AddScoped<ProductDetailsView>()
+            .AddScoped<ProfileView>()
+            .AddScoped<TrackOrderView>()
+            .AddScoped<AllProductViewModel>()
+            .AddScoped<BrandDetailViewModel>()
+            .AddScoped<CartViewModel>()
+            .AddScoped<CategoryDetailViewModel>()
+            .AddScoped<HomePageViewModel>()
+            .AddScoped<OrderDetailsViewModel>()
+            .AddScoped<ProductDetailsViewModel>()
+            .AddScoped<ProfileViewModel>()
+            .AddScoped<TrackOrderViewModel>();
 
         return builder.Build();
     }

@@ -33,7 +33,7 @@ namespace ETicaret.ViewModel
         }
         private async void TrackCommand(object obj)
         {
-            // await Application.Current.MainPage.Navigation.PushModalAsync(new TrackOrderView((Track)obj));
+             await Application.Current.MainPage.Navigation.PushModalAsync(new TrackOrderView(new TrackOrderViewModel((Track)obj)));
         }
         private async void GoBack(object obj)
         {
