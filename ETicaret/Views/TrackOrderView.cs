@@ -99,7 +99,7 @@ public partial class TrackOrderView(TrackOrderViewModel viewModel) : FmgLibConte
                                 .StrokeShape(new RoundRectangle().CornerRadius(16))
                                 .StrokeThickness(1)
                                 .IsVisible(e => e.Path("IsLineVisible"))
-                                .AlignFillVCenterH()
+                                .AlignFillCenter()
                                 .SizeRequest(2, 80)
                             ),
 

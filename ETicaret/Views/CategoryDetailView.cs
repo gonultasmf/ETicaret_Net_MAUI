@@ -32,7 +32,7 @@ public partial class CategoryDetailView(CategoryDetailViewModel viewModel) : Fmg
                                     .Padding(0)
                                     .Background(Transparent)
                                     .SizeRequest(40, 40)
-                                    .AlignStart()
+                                    .AlignLeft()
                                     .StrokeThickness(0)
                                     .StrokeShape(new RoundRectangle().CornerRadius(new CornerRadius(20, 20, 20, 20)))
                                     .GestureRecognizers(new TapGestureRecognizer().Command(e => e.Path("BackCommand")))
@@ -57,7 +57,7 @@ public partial class CategoryDetailView(CategoryDetailViewModel viewModel) : Fmg
                                     .Padding(0)
                                     .Background(Color.FromArgb("#00C569"))
                                     .SizeRequest(40, 40)
-                                    .AlignEnd()
+                                    .AlignRight()
                                     .StrokeThickness(0)
                                     .StrokeShape(new RoundRectangle().CornerRadius(new CornerRadius(20)))
                                     .Content(
@@ -83,7 +83,7 @@ public partial class CategoryDetailView(CategoryDetailViewModel viewModel) : Fmg
                                         .TextColor(Black)
                                         .Text("Top Brands")
                                         .FontSize(16)
-                                        .AlignStart()
+                                        .AlignLeft()
                                         .AlignBottom()
                                         .TextStart(),
                                         new CollectionView().Margin(0, 2).ItemsSource(e => e.Path("FeaturedBrandsDataList"))

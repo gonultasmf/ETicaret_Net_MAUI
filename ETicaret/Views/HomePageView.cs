@@ -61,7 +61,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                             .Margin(6,0)
                             .Padding(0)
                             .Background(Color.FromArgb("#00C569"))
-                            .AlignEnd()
+                            .AlignRight()
                             .StrokeShape(new RoundRectangle().CornerRadius(22))
                             .StrokeThickness(0)
                             .Content(() => {
@@ -94,7 +94,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                         .TextColor(Black)
                                                         .Text("Categories")
                                                         .FontSize(16)
-                                                        .AlignStart()
+                                                        .AlignLeft()
                                                         .AlignBottom()
                                                         .TextStart(),
                                                     new CollectionView().Margin(0, 6).ItemsSource(e => e.Path("CategoriesDataList"))
@@ -148,7 +148,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                             .FontAttributes(Bold)
                                                             .FontSize(16)
                                                             .CenterVertical()
-                                                            .AlignStart()
+                                                            .AlignLeft()
                                                             .TextStart()
                                                             .Text("Best Selling")
                                                             .TextColor(Black),
@@ -159,7 +159,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                             .Text("View All")
                                                             .TextColor(Black)
                                                             .CenterVertical()
-                                                            .AlignEnd()
+                                                            .AlignRight()
                                                         ),
                                                     new CollectionView()
                                                         .Margin(0,12)
@@ -216,7 +216,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                         .TextColor(Black)
                                                         .Text("Featured Brands")
                                                         .FontSize(16)
-                                                        .AlignStart()
+                                                        .AlignLeft()
                                                         .AlignBottom()
                                                         .TextStart(),
                                                     new CollectionView()
@@ -281,7 +281,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                             .FontAttributes(Bold)
                                                             .FontSize(16)
                                                             .CenterVertical()
-                                                            .AlignStart()
+                                                            .AlignLeft()
                                                             .TextStart()
                                                             .Text("Recommended")
                                                             .TextColor(Black),
@@ -292,7 +292,7 @@ public partial class HomePageView(HomePageViewModel viewModel) : FmgLibContentPa
                                                             .Text("View All")
                                                             .TextColor(Black)
                                                             .CenterVertical()
-                                                            .AlignEnd()
+                                                            .AlignRight()
                                                     ),
                                                     new CollectionView().Margin(12).ItemsSource(e => e.Path("BestSellingDataList"))
                                                         .ItemsLayout(

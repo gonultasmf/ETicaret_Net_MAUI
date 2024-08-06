@@ -100,7 +100,7 @@ public partial class ProfileView(ProfileViewModel viewModel) : FmgLibContentPage
                         .Margin(18,0)
                         .FontAttributes(Bold)
                         .FontSize(16)
-                        .AlignCenterVStart()
+                        .AlignCenterLeft()
                         .Text(e => e.Path("Title"))
                         .TextColor(Black)
                         .TextCenterVertical(),
@@ -110,7 +110,7 @@ public partial class ProfileView(ProfileViewModel viewModel) : FmgLibContentPage
                         .FontAttributes(Bold)
                         .FontFamily("icon")
                         .FontSize(16)
-                        .AlignCenterVEnd()
+                        .AlignCenterRight()
                         .Text("\uf142")
                         .TextColor(Black)
                         .TextCenterVertical()

@@ -68,13 +68,13 @@ public partial class CartView(CartViewModel viewModel) : FmgLibContentPage<CartV
                                 new HorizontalStackLayout().Children(
                                     new Label()
                                     .FontSize(16)
-                                    .AlignStart()
+                                    .AlignLeft()
                                     .FontAttributes(Bold)
                                     .TextColor(Black)
                                     .Text(e => e.Path("Value").Source("_stepper").StringFormat("'QTY: {0}'")),
                                     new Label()
                                     .FontSize(16)
-                                    .AlignStart()
+                                    .AlignLeft()
                                     .TextColor(Color.FromArgb("#00C569"))
                                     .Text(e => e.Path("Price"))
                                 ),

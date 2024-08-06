@@ -61,7 +61,7 @@ public partial class OrderDetailsView(OrderDetailsViewModel viewModel) : FmgLibC
                     .GroupHeaderTemplate(() =>
                         new Label()
                         .FontSize(14)
-                        .AlignStart()
+                        .AlignLeft()
                         .Text(e => e.Path("Date"))
                         .TextColor(Black)
                     )
@@ -71,18 +71,18 @@ public partial class OrderDetailsView(OrderDetailsViewModel viewModel) : FmgLibC
                             (IView)new HorizontalStackLayout()
                             .Children(
                                 new StackLayout()
-                                .AlignStart()
+                                .AlignLeft()
                                 .Children(
                                     new Label()
                                     .FontSize(16)
-                                    .AlignStart()
+                                    .AlignLeft()
                                     .Text(e => e.Path("OrderId"))
                                     .TextColor(Black),
 
                                     new Label()
                                     .Margin(0,5)
                                     .FontSize(14)
-                                    .AlignStart()
+                                    .AlignLeft()
                                     .Text(e => e.Path("Price"))
                                     .TextColor(Color.FromArgb("#00C569")),
 

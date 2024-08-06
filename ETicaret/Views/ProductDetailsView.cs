@@ -28,7 +28,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                 new Label()
                                 .FontAttributes(Bold)
                                 .FontSize(26)
-                                .AlignStart()
+                                .AlignLeft()
                                 .Text(e => e.Path("ProductDetail.Name"))
                                 .TextColor(Black)
                                 .TextCenterVertical(),
@@ -42,18 +42,18 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                     .StrokeShape(new RoundRectangle().CornerRadius(20))
                                     .StrokeThickness(1)
                                     .Content(
-                                        new HorizontalStackLayout().AlignCenterVFillH().Children(
+                                        new HorizontalStackLayout().AlignCenterFill().Children(
                                             new Label()
                                             .Margin(20,15,35,15)
                                             .FontSize(14)
-                                            .AlignCenterVStart()
+                                            .AlignCenterLeft()
                                             .Text("Size")
                                             .TextColor(Black),
 
                                             new Label()
                                             .Margin(24,15)
                                             .FontSize(14)
-                                            .AlignCenterVStart()
+                                            .AlignCenterLeft()
                                             .Text("XL")
                                             .TextColor(Black)
                                         )
@@ -71,7 +71,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                             new Label()
                                             .Margin(20, 15)
                                             .FontSize(14)
-                                            .AlignCenterVStart()
+                                            .AlignCenterLeft()
                                             .Text("Color")
                                             .TextColor(Black),
 
@@ -91,13 +91,13 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                     new Label()
                                     .FontAttributes(Bold)
                                     .FontSize(18)
-                                    .AlignCenterVStart()
+                                    .AlignCenterLeft()
                                     .Text("Details")
                                     .TextColor(Black),
 
                                     new Label()
                                     .FontSize(14)
-                                    .AlignCenterVStart()
+                                    .AlignCenterLeft()
                                     .Text(e => e.Path("ProductDetail.Details"))
                                     .TextColor(Black),
 
@@ -105,7 +105,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                     .Margin(0,30,0,0)
                                     .FontAttributes(Bold)
                                     .FontSize(18)
-                                    .AlignCenterVStart()
+                                    .AlignCenterLeft()
                                     .Text("Reviews")
                                     .TextColor(Black),
 
@@ -113,7 +113,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                                     .Margin(0,30,0,0)
                                     .FontAttributes(Bold)
                                     .FontSize(14)
-                                    .AlignCenterVStart()
+                                    .AlignCenterLeft()
                                     .Text("Write your review")
                                     .TextColor(Color.FromArgb("#00C569"))
                                 ),
@@ -162,13 +162,13 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                     new HorizontalStackLayout()
                     .Margin(15)
                     .HeightRequest(42)
-                    .AlignTopFillH()
+                    .AlignTopFill()
                     .Children(
                         new Border()
                         .Padding(0)
                         .Background(Transparent)
                         .SizeRequest(40)
-                        .AlignStart()
+                        .AlignLeft()
                         .StrokeShape(new RoundRectangle().CornerRadius(20))
                         .StrokeThickness(0)
                         .GestureRecognizers(
@@ -187,7 +187,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                         .Padding(0)
                         .Background(White)
                         .SizeRequest(40)
-                        .AlignEnd()
+                        .AlignRight()
                         .StrokeShape(new RoundRectangle().CornerRadius(20))
                         .StrokeThickness(1)
                         .GestureRecognizers(
@@ -209,7 +209,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                     .Padding(0)
                     .Background(White)
                     .HeightRequest(80)
-                    .AlignBottomFillH()
+                    .AlignBottomFill()
                     .IsVisible(e => e.Path("IsFooterVisible"))
                     .StrokeShape(new RoundRectangle().CornerRadius(20)) 
                     .StrokeThickness(1)
@@ -232,7 +232,7 @@ public partial class ProductDetailsView(ProductDetailsViewModel viewModel) : Fmg
                             new Button()
                             .Padding(new Thickness(54,12))
                             .BackgroundColor(Color.FromArgb("#00C569"))
-                            .AlignCenterVEnd()
+                            .AlignCenterRight()
                             .Text("ADD")
                             .TextColor(White)
                         )
